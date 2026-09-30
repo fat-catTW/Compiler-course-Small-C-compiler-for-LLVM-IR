@@ -1,10 +1,16 @@
 # Small C Compiler for LLVM IR
 
-A small C subset compiler built with **ANTLR4** and **Java** that translates C subset programs into **LLVM Intermediate Representation (LLVM IR)**.
+A compiler for a subset of the C programming language, built with **Java and ANTLR4**, featuring **static semantic analysis, symbol and scope management, and LLVM IR code generation**.
 
-The compiler implements lexical analysis, syntax analysis, static semantic checking, and LLVM IR code generation. The generated LLVM IR can be compiled and executed using **LLVM/Clang**.
+The compiler translates C subset programs through a complete compilation pipeline:
 
-This project was developed as the final project for the Compiler Design course at National Chung Cheng University.
+**C Source → ANTLR4 Lexer/Parser → Static Semantic Analysis → LLVM IR → Clang → Executable**
+
+It supports arithmetic and comparison expressions, control flow (`if`, `if-else`, `while`), nested constructs, user-defined functions, one-dimensional arrays, formatted I/O, and a runtime-backed custom operator.
+
+The generated LLVM IR can be compiled and linked with the provided runtime library using **LLVM/Clang**, producing native executable programs.
+
+> Developed as the final project for the **Compiler Design** course at National Chung Cheng University.
 
 ## Features
 
