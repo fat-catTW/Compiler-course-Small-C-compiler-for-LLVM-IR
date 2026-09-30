@@ -98,9 +98,9 @@ The compiler generates an LLVM IR call to the runtime implementation of the oper
 ├── myCompiler.g4                # ANTLR grammar and compiler implementation
 ├── myCompiler_test.java         # Compiler driver
 ├── myRuntime.c                  # Runtime library for custom operations
-├── Makefile
-├── C_Subset.pdf                 # Definition of the supported C subset
-└── README.pdf                   # Course project documentation
+├── Makefile                     # Build and execution commands
+├── C_Subset.md                  # Definition of the supported C subset
+└── README.md                    # Project documentation
 ```
 
 ## Build
